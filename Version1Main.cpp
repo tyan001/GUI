@@ -220,6 +220,7 @@ void Version1Frame::OnButton1Click(wxCommandEvent& event)
     x_dim = Slider1->GetValue();
     y_dim = Slider2->GetValue();
     z_dim = 1;
+    population_size = Slider3->GetValue();
     Panel1->SetSize(x_dim*26,y_dim*26);
     array_of_cells = Util::init(population_size,1,y_dim,x_dim); //error happens in the render function but it starts here probably
 
